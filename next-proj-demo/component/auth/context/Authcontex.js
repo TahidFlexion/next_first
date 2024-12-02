@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
   const login = (userData) => {
     setUser(userData);
     localStorage.setItem("user", JSON.stringify(userData));
-    router.push("/");
+    router.push("todo");
   };
 
   const signup = (userData) => {
